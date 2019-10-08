@@ -2,7 +2,8 @@ import { Photon } from '@generated/photon'
 import { GraphQLServer } from 'graphql-yoga'
 import { GraphQLSchema, GraphQLObjectType, GraphQLList } from 'graphql'
 import { User } from './User'
-require('dotenv').config()
+import * as dotenv from 'dotenv';
+dotenv.config()
 
 const photon = new Photon()
 
